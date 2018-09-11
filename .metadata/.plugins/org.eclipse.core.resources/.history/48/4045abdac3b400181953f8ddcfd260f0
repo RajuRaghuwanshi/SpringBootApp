@@ -1,0 +1,26 @@
+package io.raju.springbootstarter.topiccontroller;
+
+import java.util.Arrays;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import io.raju.springbootstarter.topic.Topic;
+
+@RestController
+public class TopicController {
+	
+	@RequestMapping("/topics")
+	public String getAllTopics(){
+		
+		return Arrays.asList(
+				
+				new Topic("Spring", "Spring Framework", "Spring Framework  description"),
+				new Topic("Java", "Core java", "java description"),
+				new Topic("JavaScript", "JavaScript Framework", "JavaScript description")
+				
+				);
+				
+	}
+	
+}

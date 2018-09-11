@@ -1,0 +1,25 @@
+package io.raju.springbootstarter.topic;
+
+import lombok.Getter;
+import lombok.Setter;
+
+public class Topic {
+
+	@Setter @Getter private String id;
+	@Setter @Getter private String name;
+	@Setter @Getter private String description;
+
+	public Topic(String id, String name, String description) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.description = description;
+	}
+
+	public Topic() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
+}

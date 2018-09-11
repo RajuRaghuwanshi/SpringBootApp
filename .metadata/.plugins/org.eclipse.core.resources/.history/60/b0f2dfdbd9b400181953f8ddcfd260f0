@@ -1,0 +1,5 @@
+package io.raju.springbootstarter.topicservice;
+
+public class TopicService {
+
+}
